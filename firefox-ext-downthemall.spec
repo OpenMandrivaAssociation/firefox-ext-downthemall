@@ -1,11 +1,11 @@
 %define ff_epoch 0
-%define ff_ver 3.0.7
+%define ff_ver 3.0.8
 %define realname downthemall
 
 %define _mozillapath %{_libdir}/firefox-%{ff_ver}
 %define _mozillaextpath %{_mozillapath}/extensions
 
-%define rel 2
+%define rel 3
 
 Summary: DownThemAll! extension for firefox
 Name: firefox-ext-%{realname}
