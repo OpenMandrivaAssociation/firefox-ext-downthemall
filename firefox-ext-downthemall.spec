@@ -1,11 +1,11 @@
 %define ff_epoch 0
-%define ff_ver 3.0.12
+%define ff_ver 3.0.13
 %define realname downthemall
 
 %define _mozillapath %{_libdir}/firefox-%{ff_ver}
 %define _mozillaextpath %{_mozillapath}/extensions
 
-%define rel 3
+%define rel 4
 
 Summary: DownThemAll! extension for firefox
 Name: firefox-ext-%{realname}
@@ -16,7 +16,7 @@ Group: Networking/WWW
 URL: http://www.downthemall.net
 Source: http://code.downthemall.net/releases/%{realname}-%{version}.xpi
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
-Requires: mozilla-firefox = %{ff_epoch}:%{ff_ver}
+Requires: firefox = %{ff_epoch}:%{ff_ver}
 Obsoletes: mozilla-firefox-ext-%{realname} < %{version}-%{release}
 Provides: mozilla-firefox-ext-%{realname} = %{version}-%{release}
 
