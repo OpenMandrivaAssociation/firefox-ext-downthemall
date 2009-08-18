@@ -16,6 +16,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 Requires: firefox = %{firefox_epoch}:%{firefox_version}
 Obsoletes: mozilla-firefox-ext-%{realname} < %{version}-%{release}
 Provides: mozilla-firefox-ext-%{realname} = %{version}-%{release}
+BuildRequires: firefox-devel
 
 %description
 DownThemAll (or just dTa) is a powerful yet easy-to-use Mozilla Firefox
