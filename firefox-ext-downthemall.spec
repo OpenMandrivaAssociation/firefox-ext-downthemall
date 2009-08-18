@@ -1,9 +1,6 @@
-%define ff_epoch 0
-%define ff_ver 3.0.13
 %define realname downthemall
 
-%define _mozillapath %{_libdir}/firefox-%{ff_ver}
-%define _mozillaextpath %{_mozillapath}/extensions
+%define _mozillaextpath %{firefox_mozillapath}/extensions
 
 %define rel 1
 
@@ -16,7 +13,7 @@ Group: Networking/WWW
 URL: http://www.downthemall.net
 Source: http://code.downthemall.net/releases/%{realname}-%{version}.xpi
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
-Requires: firefox = %{ff_epoch}:%{ff_ver}
+Requires: firefox = %{firefox_epoch}:%{firefox_version}
 Obsoletes: mozilla-firefox-ext-%{realname} < %{version}-%{release}
 Provides: mozilla-firefox-ext-%{realname} = %{version}-%{release}
 
@@ -54,5 +51,5 @@ rm -rf %{buildroot}
 
 %files
 %defattr(0644,root,root,0755)
-%dir %_mozillapath
+%dir %firefox_mozillapath
 %{_mozillaextpath}
