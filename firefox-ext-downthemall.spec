@@ -2,11 +2,11 @@
 
 %define _mozillaextpath %{firefox_mozillapath}/extensions
 
-%define rel 3
+%define rel 1
 
 Summary: DownThemAll! extension for firefox
 Name: firefox-ext-%{realname}
-Version: 1.1.4
+Version: 1.1.7
 Release: %mkrel %rel
 License: MPL1.1 or GPLv2+ or LGPLv2+
 Group: Networking/WWW
