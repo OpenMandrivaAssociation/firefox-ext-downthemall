@@ -2,7 +2,7 @@
 
 %define _mozillaextpath %{firefox_mozillapath}/extensions
 
-%define rel 1
+%define rel 2
 
 Summary: DownThemAll! extension for firefox
 Name: firefox-ext-%{realname}
