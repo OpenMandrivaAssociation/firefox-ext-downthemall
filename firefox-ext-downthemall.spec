@@ -4,6 +4,8 @@
 
 %define rel 3
 
+%define subrel 1
+
 Summary: DownThemAll! extension for firefox
 Name: firefox-ext-%{realname}
 Version: 1.1.10
