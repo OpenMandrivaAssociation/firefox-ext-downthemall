@@ -2,16 +2,18 @@
 
 %define _mozillaextpath %{firefox_mozillapath}/extensions
 
-%define rel 3
+%define rel 1
+
+%define beta b4
 
 Summary: DownThemAll! extension for firefox
 Name: firefox-ext-%{realname}
-Version: 1.1.10
-Release: %mkrel %rel
+Version: 2.0
+Release: %mkrel %{?beta:0.%{beta}.}%rel
 License: MPL1.1 or GPLv2+ or LGPLv2+
 Group: Networking/WWW
 URL: http://www.downthemall.net
-Source: http://code.downthemall.net/releases/%{realname}-%{version}.xpi
+Source: http://code.downthemall.net/releases/%{realname}-%{version}%{?beta}.xpi
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 Requires: firefox = %{firefox_epoch}:%{firefox_version}
 Obsoletes: mozilla-firefox-ext-%{realname} < %{version}-%{release}
