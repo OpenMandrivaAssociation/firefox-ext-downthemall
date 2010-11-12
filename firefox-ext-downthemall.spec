@@ -4,7 +4,7 @@
 
 %define rel 1
 
-%define beta b4
+%define beta b5
 
 Summary: DownThemAll! extension for firefox
 Name: firefox-ext-%{realname}
