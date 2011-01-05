@@ -2,7 +2,7 @@
 
 %define _mozillaextpath %{firefox_mozillapath}/extensions
 
-%define rel 2
+%define rel 3
 
 %define beta b5
 
