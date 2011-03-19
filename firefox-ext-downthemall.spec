@@ -4,7 +4,7 @@
 
 Summary: DownThemAll! extension for firefox
 Name: firefox-ext-%{realname}
-Version: 2.0
+Version: 2.0.2
 Release: %mkrel %rel
 License: MPL1.1 or GPLv2+ or LGPLv2+
 Group: Networking/WWW
