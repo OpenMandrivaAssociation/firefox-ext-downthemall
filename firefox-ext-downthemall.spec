@@ -8,7 +8,7 @@ Version: 2.0.3
 Release: %rel
 License: MPL1.1 or GPLv2+ or LGPLv2+
 Group: Networking/WWW
-URL: http://www.downthemall.net
+URL: https://www.downthemall.net
 Source: http://code.downthemall.net/releases/%{realname}-%{version}.xpi
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 Buildarch: noarch
